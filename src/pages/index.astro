@@ -6,20 +6,64 @@ import Testimonial from "@layouts/components/Testimonial.astro";
 import Service from "@layouts/components/Service.astro";
 import Cta from "@layouts/partials/Cta.astro";
 import { getEntryBySlug } from "astro:content";
+// import { NavigationMenu } from "src/components/ui/navigation-menu";
+// import { Button2 } from "src/components/ui/Button";
+import Slider from "../components/Slider.jsx"
+import Title from "../components/Title.astro"
+import Notice from "@shortcodes/Notice";
+import Accordion from "@shortcodes/Accordion";
+import FeaturedBlog from "../layouts/components/blog/FeaturedBlog.astro";
+
 
 const homepage = await getEntryBySlug("homepage", "index");
-const { banner, key_features, service, testimonial } = homepage.data;
+const { banner, testimonial, key_features, service } = homepage.data;
 ---
 
 <Base>
   <!-- banner -->
+  <Notice type="warning">Web incompleta, disfrute de su navegación</Notice>
+  <Title />
+  <!-- <Slider /> -->
   <Banner banner={banner} />
-  <!-- key features -->
-  <KeyFeatures key_features={key_features} />
-  <!-- service -->
-  <Service service={service} />
+  <FeaturedBlog />
+  <Accordion client:load title="Why should you need to do this?">
+
+    - This is a thing.<br>
+    - This is a thing.<br>
+    - This is a thing.<br>
+    - This is a thing.<br>
+    - This is a thing.
+    
+    </Accordion>
+    
+    <Accordion client:load title="How can I adjust Horizontal centering">
+    
+    - This is a thing.
+    - This is a thing.
+    - This is a thing.
+    - This is a thing.
+    - This is a thing.
+    
+    </Accordion>
+    
+    <Accordion client:load title="Should you use Negative margin?">
+    
+    - This is a thing.
+    - This is a thing.
+    - This is a thing.
+    - This is a thing.
+    - This is a thing.
+    
+    </Accordion>
+
+  <br class='mt-48'/>
   <!-- testimonial -->
   <Testimonial testimonial={testimonial} />
+  
+  <!-- service -->
+  <Service service={service} />
+  <!-- key features -->
+  <KeyFeatures key_features={key_features} />
   <!-- call to action -->
   <Cta />
 </Base>

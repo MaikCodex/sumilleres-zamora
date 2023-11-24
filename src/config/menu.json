@@ -1,27 +1,57 @@
 {
   "main": [
     {
-      "name": "Home",
+      "name": "Inicio",
       "url": "/"
     },
     {
-      "name": "About",
-      "url": "/about"
+      "name": "La Asociación",
+      "url": "/about",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Historia",
+          "url": "/about"
+        },
+        {
+          "name": "Socios",
+          "url": "/#"
+        },
+        {
+          "name": "Házte socio",
+          "url": "/#"
+        }
+      ]
     },
     {
-      "name": "Blog",
-      "url": "/blog"
+      "name": "Actividades",
+      "url": "/features",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Catas",
+          "url": "/#"
+        },
+        {
+          "name": "Visitas/ viajes",
+          "url": "/#"
+        },
+        {
+          "name": "Concursos",
+          "url": "/#"
+        },
+        {
+          "name": "Eventos",
+          "url": "/#"
+        },
+        {
+          "name": "Formaciónes y cursos",
+          "url": "/#"
+        }
+      ]
     },
     {
-      "name": "Features",
-      "url": "/features"
-    },
-    {
-      "name": "How It Works",
-      "url": "/how-it-works"
-    },
-    {
-      "name": "Pages",
+      "name": "Páginas",
       "url": "",
       "hasChildren": true,
       "children": [
@@ -59,26 +89,26 @@
       ]
     },
     {
-      "name": "Contact",
+      "name": "Contacto",
       "url": "/contact"
     }
   ],
 
   "footer": [
     {
-      "name": "About",
+      "name": "Acerca de",
       "url": "/about"
     },
     {
-      "name": "Contact",
+      "name": "Contacto",
       "url": "/contact"
     },
     {
-      "name": "Elements",
+      "name": "Actividades",
       "url": "/elements"
     },
     {
-      "name": "Changelog",
+      "name": "Blog",
       "url": "/changelog"
     }
   ]

@@ -15,9 +15,225 @@ code {
 }
 
 .bg-gradient-to-tl {
-  background-image: linear-gradient(184.78deg, #fa709a 7.64%, #fee140 120.07%);
+  background-image: linear-gradient(184.78deg, #fa7070 7.64%, #fee140 120.07%);
 }
 
+
 .bg-gradient {
-  background-image: linear-gradient(184.78deg, #fa709a 7.64%, #fee140 120.07%);
+  background-image: conic-gradient(at right bottom, rgb(239, 68, 68), rgb(153, 27, 27))
 }
+.bg-wine{
+  background-image: src("/public/Media/winery-35.png");
+}
+
+    /* Primary: Piercing Red */
+    // --primary-100: #FFF2F2;
+    // --primary-200: #FEBABA;
+    // --primary-300: #FA8181;
+    // --primary-400: #EF4747;
+    // --primary-500: #D91118;
+    // --primary-600: #AC0615;
+    // --primary-700: #800114;
+    // --primary-800: #530011;
+    // --primary-900: #26000A;
+
+    // /* Accent: Opulent Lime */
+    // --accent-100: #F6FFF2;
+    // --accent-200: #D4FFBC;
+    // --accent-300: #B7FB85;
+    // --accent-400: #9CF34E;
+    // --accent-500: #85E319;
+    // --accent-600: #6EB408;
+    // --accent-700: #578502;
+    // --accent-800: #3D5500;
+    // --accent-900: #1D2600;
+
+    // /* Neutral */
+    // --neutral-100: #FCFAFA;
+    // --neutral-200: #ECE6E6;
+    // --neutral-300: #DBD3D3;
+    // --neutral-400: #CBC0C0;
+    // --neutral-500: #BAADAE;
+    // --neutral-600: #958A8B;
+    // --neutral-700: #706769;
+    // --neutral-800: #4B4446;
+    // --neutral-900: #262224;
+    
+
+
+.header{
+      border-radius: 50px;
+      margin: 20px;
+      top: 85vh;
+    }
+
+.header-sticky{
+  backdrop-filter: blur(17px);
+  background-color: rgba(255,255,255,.5);
+  border: 2px solid rgba(255,255,255,.3);
+  box-shadow: 0 0 19px 3px rgba(0,0,0,.1);
+  
+}
+
+#dropdown{
+}
+#dropdown-button > ul{
+  backdrop-filter: blur(17px) !important;
+  border: 1px solid rgba(255,255,255,.3);
+  background-color: rgba(220,220,220,.3);
+
+}
+
+#dropdown > li{
+  transition: all .5s ease;
+}
+#dropdown > li:hover{
+  transform: scale(1.1);
+}
+
+#nav-menu > li{
+  transition: all .5s ease;
+}
+#nav-menu > li:hover{
+  transform: translateY(-3px);
+}
+
+h1,h2{
+  color: #280400 ; 
+}
+
+::selection {
+  background-color: #a80038; /* Cambia el color de fondo de la selección a tu color específico */
+  color: #fcfcfc; /* Cambia el color del texto seleccionado a tu preferencia */
+}
+
+// #myVideo{
+//   // background: url('/public/images/footer-video.mp4') !important;
+//   position: relative;
+//   right: 0;
+//   bottom: 0;
+//   min-width: 100%;
+//   min-height: 100%;
+// }
+
+// #myVideo{
+//     background-image: url("/public/images/footer-video.mp4");
+//     background-size: cover;
+//     background-position: center;
+//     height: 100%;
+//     width: 100%;
+//     position: relative;
+//     bottom: 0;
+//     z-index: -1;
+// }
+
+// footer{
+//   background-color: rgba(0,0,0,.9) !important;
+//   background-image: url("/public/images/footer-video.mp4") !important;
+//   height: 100% !important;
+//   bottom: 0;
+//   // min-height: 200px !important;
+// }
+
+
+// #myVideo, video, source {
+//   object-fit: cover !important;
+//   z-index: -1;
+//   object-position: bottom center !important;
+// }
+
+video {
+  z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+body {
+  font-family: "Montserrat", "Open Sans", sans-serif !important;
+
+}
+
+.text2 {
+  width: 450px;
+  left: 50%;
+  height: 40px;
+  top: 50%;
+  margin-top: -20px;
+}
+
+.p2 {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.word {
+  position: absolute;
+  width: 220px;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: #8e44ad;
+}
+
+.belize {
+  color: #2980b9;
+}
+
+.pomegranate {
+  color: #c0392b;
+}
+
+.green {
+  color: #16a085;
+}
+
+.midnight {
+  color: #2c3e50;
+}
+
+
+img{
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+

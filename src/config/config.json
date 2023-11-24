@@ -1,14 +1,14 @@
 {
   "site": {
-    "title": "Pinwheel Astro",
-    "base_url": "https://pinwheel-astro.vercel.app",
+    "title": "Sumilleres Zamora",
+    "base_url": "https://sumillereszamora.es",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
-    "logo": "/images/logo.png",
-    "logo_width": "147",
-    "logo_height": "31",
-    "logo_text": "Pinwheel"
+    "logo": "../../images/logo.png",
+    "logo_width": "180",
+    "logo_height": "50",
+    "logo_text": "Sumilleres Zamora"
   },
 
   "settings": {
@@ -18,10 +18,11 @@
   },
 
   "call_to_action": {
-    "title": "Helping teams in the world with focus",
-    "description": "Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, sed condimentum volutpat.",
+    "title": "Únete a la Asociación de Sumilleres ",
+    "description": 
+      "Disfruta de las experiencias y beneficios que te brindan unirte a la organización. <br/>",
     "button": {
-      "label": "Download The Theme",
+      "label": "Acceder",
       "link": "https://themefisher.com/astro-themes/pinwheel-astro"
     }
   },
@@ -33,17 +34,17 @@
   },
 
   "params": {
-    "footer_description": "Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, sed condimentum volutpat.",
-    "email": "info@andromeda.io",
-    "location": "2118 Thornridge Cir. Syracuse, Connecticut 35624",
-    "phone": "+704-555-0127",
+    "footer_description": "Cata el alma de Zamora con cada copa. ",
+    "email": "info@sumillereszamora.es",
+    "location": "C/ Amargura Nº 7, 49013, Zamora",
+    "phone": "+34 639 15 67 03",
     "contact_form_action": "#",
-    "copyright": "Copyright © 2023 a theme by [Themefisher](https://themefisher.com)"
+    "copyright": "sumillereszamora.es ©2023 | Todos los derechos reservados"
   },
 
   "metadata": {
-    "meta_author": "Themefisher",
+    "meta_author": "MKcode",
     "meta_image": "/images/og-image.png",
-    "meta_description": "pinwheel astro"
+    "meta_description": "Sumilleres zamora"
   }
 }

@@ -5,12 +5,27 @@ import config from "@config/config.json";
 import menu from "@config/menu.json";
 import social from "@config/social.json";
 import { markdownify } from "@lib/utils/textConverter";
+import { NavigationMenu } from '@radix-ui/react-navigation-menu';
+import NavigationMenuDemo from '../../components/ui/NavigationMenuDemo'
 const { footer } = menu;
 const { copyright, location, email, phone, footer_description } = config.params;
 ---
 
-<footer class="footer bg-[#F1F1F1]">
-  <div class="container">
+<footer class="footer relative bg-white/90 overflow-hidden">
+  <video
+    autoplay
+    loop
+    muted
+    class="absolute sm:hidden md:flex"
+    id='myVideo'
+  >
+    <source
+      src="/public/images/footer-video.mp4"
+      type="video/mp4"
+    />
+  </video>
+  <NavigationMenuDemo />
+  <div class="container z-10">
     <div class="gx-5 row pb-10 pt-[52px]">
       <div class="col-12 mt-12 md:col-6 lg:col-3">
         <Logo />
@@ -19,12 +34,12 @@ const { copyright, location, email, phone, footer_description } = config.params;
         </p>
       </div>
       <div class="col-12 mt-12 md:col-6 lg:col-3">
-        <h6>Socials</h6>
+        <h6>Redes sociales</h6>
 
         <Social source={social} className="social-icons mt-4 lg:mt-6" />
       </div>
       <div class="col-12 mt-12 md:col-6 lg:col-3">
-        <h6>Quick Links</h6>
+        <h6>Mapa del sitio</h6>
         <ul>
           {
             footer.map((item, i) => (
@@ -38,7 +53,7 @@ const { copyright, location, email, phone, footer_description } = config.params;
         </ul>
       </div>
       <div class="col-12 mt-12 md:col-6 lg:col-3">
-        <h6>Location & Contact</h6>
+        <h6>Localización y contacto</h6>
         <ul>
           <li class="mb-2">{location}</li>
           <li class="mb-2">
@@ -53,7 +68,7 @@ const { copyright, location, email, phone, footer_description } = config.params;
       </div>
     </div>
   </div>
-  <div class="container max-w-[1440px]">
+  <div class="container max-w-[1440px] z-10">
     <div
       class="footer-copyright mx-auto border-t border-border pb-10 pt-7 text-center"
     >
